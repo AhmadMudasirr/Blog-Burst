@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog Posts</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <p class="navbar-brand">A Journey Through Today</p>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- 6 -->
+                <li id="home"><a href="/">HOME</a></li>
+                <li id="about"><a href="/about">ABOUT US</a></li>
+                <li id="contact"><a href="/contact">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<body>
+    <div class="container">
+
+        <h1>Compose</h1>
+
+        <form action="/compose" method="post">
+
+            <div class="form-group">
+                <label>Tittle</label>
+                <input class="form-control" type="text" name="postTittle" autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label> Post Body</label>
+                <textarea class="form-control" name="postBody" cols="4" rows="5"> </textarea>
+            </div>
+            <button class="btn btn-primary" type="submit" name="button"> Publish</button>
+        </form>
+
+    </div>
+    <div class="footer-padding"></div>
+    <div class="footer">
+        <p>Made with ❤️ By @ Mudasir Ahmad</p>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<%- include("partials/header") -%>
+
+    <h1>
+        <%=tittle %>
+    </h1>
+
+    <p>
+        <%= Para1 %>
+    </p>
+
+    <% newItems.forEach( function(posts) { %>
+      <%  let tittle =posts.tittle %>
+        <% let content=posts.content %>
+            <% let postContent=content.substring(0,100) + "..." %>
+                <h2>
+                    <%= posts.tittle %>
+                </h2>
+                <p class="textBody">
+                    <%= postContent %>
+                        <a href="/posts/<%= tittle %>">Read More </a>
+                </p>
+                <% }) %>
+
+                    <!-- <% for(let i=0 ; i <newItems.length; i++){ %>
+            <h3>
+                <%= newItems[i].tittle %>
+            </h3>
+            <p>  <%= newItems[i].content %></p>
+                
+            <%} %> -->
+
+                    <%- include("partials/footer") -%>
